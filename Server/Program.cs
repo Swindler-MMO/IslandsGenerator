@@ -8,7 +8,7 @@ namespace Swindler.IslandGenerator.Server
 	class Program
 	{
 
-		private const string WEBSERVER_URL = "http://localhost:3000/";
+		private const string WEBSERVER_URL = "http://+:3000/";
 
 		static void Main(string[] args)
 		{
