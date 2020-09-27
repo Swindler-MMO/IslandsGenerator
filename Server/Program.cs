@@ -2,6 +2,7 @@
 using EmbedIO.WebApi;
 using Swan.Logging;
 using System;
+using Sentry;
 
 namespace Swindler.IslandGenerator.Server
 {
@@ -12,6 +13,7 @@ namespace Swindler.IslandGenerator.Server
 
 		static void Main(string[] args)
 		{
+			SentrySdk.Init("https://1eed95455e494f1fae05d6c5612e82d7@o453586.ingest.sentry.io/5442502");
 			CreateServer().RunAsync();
 			Console.ReadKey(true);
 		}
